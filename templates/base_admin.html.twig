@@ -31,7 +31,17 @@
             </div>
 
             <div class="col-sm-6 d-md-block-d-sm-block text-end">
-        
+                <form>
+                    <a class="btn btn-primary my-2 my-sm-0" href="/{{ app.user ? 'logout' : 'login' }}" @click="isOpen = false">
+                        {{ app.user ? 'LOGOUT' : 'LOGIN'}}
+                    </a>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 <nav class="navbar navbar-expand-sm navbar-dark sticky-top" style="background-color: #4F839A;">
